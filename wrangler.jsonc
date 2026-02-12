@@ -1,0 +1,23 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "my-crm",
+	"main": "src/index.ts",
+	"compatibility_date": "2026-02-10",
+	"compatibility_flags": [
+		"nodejs_compat",
+		"global_fetch_strictly_public"
+	],
+	"assets": {
+		"directory": "./public"
+	},
+	"observability": {
+		"enabled": true
+	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "crm-db",
+			"database_id": "4ccaa446-1558-4fe2-8968-7e578168e4de"
+		}
+	]
+}
